@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Bear Race</title>
+</head>
+<body>
+    <div class="container">
+        <div class="game-wrapper">
+
+            <div class="left-side">
+                <div class="select-race">
+                    <div class="first-choise">
+                        <div class="card-inner">
+                            <div class="choose-from-plalyer">
+                                <button class="player" id="first">1</button>
+                                <button class="player" id="second">2</button>
+                                <button class="player" id="third">3</button>
+                                <button class="player" id="fourth">4</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="color-choise">
+                        <div class="card-inner">
+                            <div class="choose-from-color">
+                                <button class="label red" id="red"> </button>
+                                <button class="label blue" id="blue"> </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="information">
+                        <p>One click 1,000P    /     One game MAX  10,000P</p>
+                    </div>
+                </div>
+                <div class="blue-card result-history">
+                    <h2 class="heading-title">Result history</h2>
+                    <div class="card-inner">
+                        <ul class="history-lists">
+                            <li class="listed-history"><div class="list-number">1</div><div class="player-number red">1</div><div class="player-icon"><img src="img/bear-1-icon.svg" alt=""></div></li>
+                            <li class="listed-history"><div class="list-number">1</div><div class="player-number red">1</div><div class="player-icon"><img src="img/bear-1-icon.svg" alt=""></div></li>
+                            <li class="listed-history"><div class="list-number">1</div><div class="player-number red">1</div><div class="player-icon"><img src="img/bear-1-icon.svg" alt=""></div></li>
+                            <li class="listed-history"><div class="list-number">1</div><div class="player-number red">1</div><div class="player-icon"><img src="img/bear-1-icon.svg" alt=""></div></li>
+                            <li class="listed-history"><div class="list-number">1</div><div class="player-number red">1</div><div class="player-icon"><img src="img/bear-1-icon.svg" alt=""></div></li>
+                            <li class="listed-history"><div class="list-number">1</div><div class="player-number red">1</div><div class="player-icon"><img src="img/bear-1-icon.svg" alt=""></div></li>
+                            <li class="listed-history"><div class="list-number">1</div><div class="player-number red">1</div><div class="player-icon"><img src="img/bear-1-icon.svg" alt=""></div></li>
+                            <li class="listed-history"><div class="list-number">1</div><div class="player-number red">1</div><div class="player-icon"><img src="img/bear-1-icon.svg" alt=""></div></li>
+                            <li class="listed-history"><div class="list-number">1</div><div class="player-number red">1</div><div class="player-icon"><img src="img/bear-1-icon.svg" alt=""></div></li>
+                            <li class="listed-history"><div class="list-number">1</div><div class="player-number red">1</div><div class="player-icon"><img src="img/bear-1-icon.svg" alt=""></div></li>
+                            <li class="listed-history"><div class="list-number">1</div><div class="player-number red">1</div><div class="player-icon"><img src="img/bear-1-icon.svg" alt=""></div></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="blue-card bet-result">
+                    <h2 class="heading-title">Bet Result</h2>
+                    <div class="card-inner">
+                        <div class="first-choise">
+                            <div class="title">1st Choise</div>
+                            <ol class="choose-players">
+                                <li class="choose-player" id="first"><div class="amount">0</div><span>P</span></li>
+                                <li class="choose-player" id="second"><div class="amount">0</div><span>P</span></li>
+                                <li class="choose-player" id="third"><div class="amount">0</div><span>P</span></li>
+                                <li class="choose-player" id="fourth"><div class="amount">0</div><span>P</span></li>
+                            </ol>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="color-choose">
+                            <div class="title">Color Choose</div>
+                            <ol class="choose-labels">
+                                <li class="choose-label" id="selected-red"><div class="amount">0</div><span>P</span></li>
+                                <li class="choose-label" id="selected-blue"><div class="amount">0</div><span>P</span></li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-side">
+                <div class="coundown-timing">
+                    <div class="time-progress"></div>
+                </div>
+                <div class="bear-game">
+                    <div class="bears">
+                        <div class="racing-bear brown" data-label="red" data-amount="0" id="bear-1"><img class="stand-img" src="img/bear-1.svg" alt=""></div>
+                        <div class="racing-bear zombie" data-label="blue" data-amount="0" id="bear-2"><img class="stand-img" src="img/bear-2.svg" alt=""></div>
+                        <div class="racing-bear polar" data-label="red" data-amount="0" id="bear-3"><img class="stand-img" src="img/bear-3.svg" alt=""></div>
+                        <div class="racing-bear flight" data-label="blue" data-amount="0" id="bear-4"><img  class="stand-img"src="img/bear-4.svg" alt=""></div>
+                    </div>
+                    <div class="main-bg">
+                        <!-- <img src="img/background.svg" alt=""> -->
+                    </div>
+                </div>
+                <div class="race-ground">
+                    <div class="final-line">
+                        <img src="img/final-line.svg" alt="">
+                    </div>
+                    <div class="bear-floor"></div>
+                    <div class="bear-floor"></div>
+                    <div class="bear-floor"></div>
+                    <div class="bear-floor"></div>
+                </div>
+            </div>
+            
+        </div>
+        </div>
+    <div class="action-buttons">
+        <button type="button" onclick="gameRace();" class="btn btn-start">Start</button>
+        <button type="button" onclick="location.reload();" class="btn btn-start">Reset</button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js" integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.6/lottie.min.js" integrity="sha512-BB7rb8ZBAxtdJdB7nwDijJH9NC+648xSzviK9Itm+5APTtdpgKz1+82bDl4znz/FBhd0R7pJ/gQtomnMpZYzRw==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.4.0/socket.io.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/seedrandom/3.0.5/seedrandom.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
